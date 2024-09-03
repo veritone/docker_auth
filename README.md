@@ -61,6 +61,16 @@ Bug reports, feature requests and pull requests (for small fixes) are welcome.
 If you require larger changes, please file an issue.
 We cannot guarantee response but will do our best to address them.
 
+## Docker Registry config
+```
+auth:
+       token:
+          realm: "https://remote.repository.com:5001/auth"
+          service: "Docker registry"
+          issuer: "MyRepository auth server"
+          rootcertbundle: "/le/live/remote.repository.com/fullchain.pem"
+```
+
 ## Licensing
 
    Copyright 2015 [Cesanta Software Ltd](http://www.cesanta.com).
